@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -41,10 +42,10 @@
     </header>
     <main class="main-container">
       <h1 class="visually-hidden">Страница формы обратной связи.</h1>
-      <section class="hero">
-        <div class="hero__wrapper">
+      <section class="main-hero">
+        <div class="main-hero__wrapper">
           <h2 class="visually-hidden">Блок приветствия.</h2>
-          <img class="hero__image" src="#">
+          <img class="main-hero__image" src="#">
         </div>
       </section>
       <section class="feedback">
@@ -72,20 +73,20 @@
                       <input class="feedback-form__input--last-name feedback-form__input" type="text" value="Викторович" placeholder="Отчество" name="last-name">
                     </label>
                   </li>
-               </ul>
+                </ul>
               </fieldset>
               <fieldset class="feedback-form__contacts">
                 <legend class="feedback-form__title">Контактная информация:</legend>
                 <ul class="feedback-form__list">
                   <li class="feedback-form__item">
                     <label class="feedback-form__number">Контактный телефон*:
-                      <input class="feedback-form__input--number feedback-form__input" placeholder="Ваш телефон" type="number" id="feedback-contacts__number" name="phone number">
+                      <input class="feedback-form__input--contacts feedback-form__input" placeholder="Введите телефон" type="text" id="feedback-contacts__number" name="phone number">
                     </label>
                     <img class="feedback-form__icon" src="#" alt="Трубка телефона">
                   </li>
                   <li class="feedback-form__item">
                     <label class="feedback-form__email">Электронная почта*:
-                      <input class="feedback-form__input--email feedback-form__input" placeholder="Введите e-mail" type="email" id="feedback-contacts__email" name="phone number">
+                      <input class="feedback-form__input--contacts feedback-form__input" placeholder="Введите e-mail" type="email" id="feedback-contacts__email" name="phone number">
                     </label>
                     <img class="feedback-form__icon" src="#" alt="Конверт почты">
                   </li>
@@ -122,9 +123,9 @@
                 <ul class="feedback-form__list">
                   <li class="feedback-form__item">
                     <label class="feedback-form__checkbox feedback-form__checkbox--current">
-                       <input class="feedback-form__input--checkbox feedback-form__input visually-hidden" type="checkbox" name="Мост дьявола">
-                       <span class="feedback-form__marcer"></span>
-                       <span class="feedback-form__label">Мост дьявола</span>
+                      <input class="feedback-form__input--checkbox feedback-form__input visually-hidden" type="checkbox" name="Мост дьявола">
+                      <span class="feedback-form__marcer"></span>
+                      <span class="feedback-form__label">Мост дьявола</span>
                     </label>
                   </li>
                   <li class="feedback-form__item">
@@ -132,9 +133,9 @@
                       <input class="feedback-form__input--checkbox feedback-form__input visually-hidden" type="checkbox" name="Гора-Колокол">
                       <span class="feedback-form__marcer"></span>
                       <span class="feedback-form__label">Гора-Колокол</span>
-                   </label>
-                 </li>
-                 <li class="feedback-form__item">
+                    </label>
+                  </li>
+                  <li class="feedback-form__item">
                     <label class="feedback-form__checkbox feedback-form__checkbox--current">
                       <input class="feedback-form__input--checkbox feedback-form__input visually-hidden" type="checkbox" name="Слайд-парк">
                       <span class="feedback-form__marcer"></span>
@@ -148,18 +149,18 @@
                       <span class="feedback-form__label">Красные скалы</span>
                     </label>
                   </li>
-               </ul>
-             </fieldset>
-             <fieldset class="feedback-form__comment">
+                </ul>
+              </fieldset>
+              <fieldset class="feedback-form__comment">
                 <legend class="feedback-form__tittle">Опишите свои эмоции:</legend>
                 <label class="feedback-form__label">
                   <input class="feedback-form__input--comment feedback-form__input" type="text" placeholder="Опишите подробно все свои восторги" id="feedback-comment__label" name="comment">
                 </label>
-             </fieldset>
-             <button class="feedback-form__button button" type="submit">Отправить отзыв</button>
-             <p class="feedback-form__remark">
-              <small>* — обязательные поля</small>
-             </p>
+              </fieldset>
+              <button class="feedback-form__button button" type="submit">Отправить отзыв</button>
+              <p class="feedback-form__remark">
+                <small>* — обязательные поля</small>
+              </p>
             </div>
           </form>
         </div>
