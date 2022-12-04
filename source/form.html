@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -41,10 +42,10 @@
     </header>
     <main class="main-container">
       <h1 class="visually-hidden">Страница формы обратной связи.</h1>
-      <section class="hero">
-        <div class="hero__wrapper">
+      <section class="main-hero">
+        <div class="main-hero__wrapper">
           <h2 class="visually-hidden">Блок приветствия.</h2>
-          <img class="hero__image" src="#">
+          <img class="main-hero__image" src="#">
         </div>
       </section>
       <section class="feedback">
@@ -79,13 +80,13 @@
                 <ul class="feedback-form__list">
                   <li class="feedback-form__item">
                     <label class="feedback-form__number">Контактный телефон*:
-                      <input class="feedback-form__input--number feedback-form__input" placeholder="Ваш телефон" type="text" id="feedback-contacts__number" name="phone number">
+                      <input class="feedback-form__input--contacts feedback-form__input" placeholder="Введите телефон" type="text" id="feedback-contacts__number" name="phone number">
                     </label>
                     <img class="feedback-form__icon" src="#" alt="Трубка телефона">
                   </li>
                   <li class="feedback-form__item">
                     <label class="feedback-form__email">Электронная почта*:
-                      <input class="feedback-form__input--email feedback-form__input" placeholder="Введите e-mail" type="email" id="feedback-contacts__email" name="phone number">
+                      <input class="feedback-form__input--contacts feedback-form__input" placeholder="Введите e-mail" type="email" id="feedback-contacts__email" name="phone number">
                     </label>
                     <img class="feedback-form__icon" src="#" alt="Конверт почты">
                   </li>
@@ -158,7 +159,7 @@
              </fieldset>
              <button class="feedback-form__button button" type="submit">Отправить отзыв</button>
              <p class="feedback-form__remark">
-              <small>* — обязательные поля</small>
+               <small>* — обязательные поля</small>
              </p>
             </div>
           </form>
