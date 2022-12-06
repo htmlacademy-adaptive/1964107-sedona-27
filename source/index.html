@@ -2,13 +2,14 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="main-header">
       <a class="main-header__logo">
-        <img class="main-header__logo-image" src="#" width="185" height="96" alt="логотип города Седона.">
+        <img class="main-header__logo-image" src="img/main-logo.svg" width="185" height="96" alt="логотип города Седона.">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
@@ -118,7 +119,9 @@
     <footer class="main-footer">
       <div class="main-footer__wrapper">
         <div class="main-footer__social social">
-          <p class="social__title">#visitSEDONA</p>
+          <div class="social__title--wrapper social__title">
+            <p class="social__title">#visitSEDONA</p>
+          </div>
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--vkontakte" href="#">Мы в вк</a>
@@ -130,10 +133,10 @@
               <a class="social__link social__link--telegram" href="#">Мы в телеграм</a>
             </li>
           </ul>
-        </div>
-        <div class="main-footer__copyright copyright">
-          <p class="copyright__text">Разработано</p>
-          <a class="copyright__link" href="#">html academy</a>
+          <div class="main-footer__copyright copyright">
+            <p class="copyright__text">Разработано</p>
+            <a class="copyright__link" href="#">html academy</a>
+          </div>
         </div>
       </div>
     </footer>
