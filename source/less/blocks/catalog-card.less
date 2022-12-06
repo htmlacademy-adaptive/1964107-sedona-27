@@ -19,3 +19,26 @@
   line-height: 21px;
   text-transform: uppercase;
 }
+
+.catalog-card__list {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: @tablet-width) {
+  .catalog-card__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog-card__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
