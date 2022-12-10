@@ -9,31 +9,34 @@
   <body class="page__body">
     <header class="main-header">
       <a class="main-header__logo">
-        <img class="main-header__logo-image" src="img/main-logo.svg" width="185" height="96" alt="логотип города Седона.">
+        <img class="main-header__logo-image" src="img/header/main-logo.svg" width="185" height="96" alt="логотип города Седона.">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
+        <button class="main-nav__toggle--open main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню навигации</span>
+        </button>
+        <button class="main-nav__toggle--close main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню навигации</span>
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a href="index.html">
+              <a class="site-list__link" href="index.html">
                 главная
               </a>
             </li>
             <li class="site-list__item">
-              <a href="catalog.html">
+              <a class="site-list__link" href="catalog.html">
                 фото и видео
               </a>
             </li>
             <li class="site-list__item site-list__item--current">
-              <a>
+              <a class="site-list__link">
                 форма отзыва
               </a>
             </li>
             <li class="site-list__item">
-              <a href="#">
+              <a class="site-list__link" href="#">
                 html academy
               </a>
             </li>

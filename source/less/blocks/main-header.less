@@ -1,8 +1,16 @@
 .main-header {
   background-color: #ffffff;
+  min-width: 320px;
+  min-height: 56px;
+  position: relative;
   display: flex;
   flex-direction: column;
-  min-width: 320px;
+}
+
+.main-header__logo {
+  width: 185px;
+  cursor: pointer;
+  margin: 0 auto;
 }
 
 @media (min-width: @tablet-width) {
