@@ -11,42 +11,44 @@
       <a class="main-header__logo">
         <img class="main-header__logo-image" src="img/header/main-logo.svg" width="185" height="96" alt="логотип города Седона.">
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню навигации</span>
         </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a class="site-list__link" href="index.html">
-                главная
-              </a>
-            </li>
-            <li class="site-list__item site-list__item--current">
-              <a class="site-list__link">
-                фото и видео
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="form.html">
-                форма отзыва
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="#">
-                html academy
-              </a>
-            </li>
-          </ul>
-        </div>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="index.html">
+              главная
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--current" href="catalog.html">
+              фото и видео
+            </a>
+          </li>
+          <li class="site-list__item site-list__item--space"></li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html">
+              форма отзыва
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">
+              html academy
+            </a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main class="main-container">
       <section class="main-hero">
         <h2 class="visually-hidden">Блок приветствия.</h2>
         <div class="main-hero__wrapper">
-          <img class="main-hero__image" src="#">
+          <img class="main-hero__image" src="/img/hero/hero-welcome-desctop.svg" width="460" height="350" alt="Welcome to the gorgeus Sedona 'Because the Grand Canyon sucks'!">
         </div>
+        <span class="main-hero__decor">
+          <img src="/img/hero/hero-triangle-desctop.svg" width="1200" height="57" alt="Юзер бар.">
+        </span>
       </section>
       <section class="catalog">
         <h1 class="catalog__title">фото и видео</h1>
@@ -126,5 +128,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

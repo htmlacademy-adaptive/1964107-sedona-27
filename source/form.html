@@ -11,46 +11,45 @@
       <a class="main-header__logo">
         <img class="main-header__logo-image" src="img/header/main-logo.svg" width="185" height="96" alt="логотип города Седона.">
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle--open main-nav__toggle" type="button">
+      <nav class="main-nav main-nav--closed">
+        <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню навигации</span>
         </button>
-        <button class="main-nav__toggle--close main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню навигации</span>
-        </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a class="site-list__link" href="index.html">
-                главная
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="catalog.html">
-                фото и видео
-              </a>
-            </li>
-            <li class="site-list__item site-list__item--current">
-              <a class="site-list__link">
-                форма отзыва
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="#">
-                html academy
-              </a>
-            </li>
-          </ul>
-        </div>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link " href="index.html">
+              главная
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="catalog.html">
+              фото и видео
+            </a>
+          </li>
+          <li class="site-list__item site-list__item--space"></li>
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--current" href="form.html">
+              форма отзыва
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">
+              html academy
+            </a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main class="main-container">
       <h1 class="visually-hidden">Страница формы обратной связи.</h1>
       <section class="main-hero">
+        <h2 class="visually-hidden">Блок приветствия.</h2>
         <div class="main-hero__wrapper">
-          <h2 class="visually-hidden">Блок приветствия.</h2>
-          <img class="main-hero__image" src="#">
+          <img class="main-hero__image" src="/img/hero/hero-welcome-desctop.svg" width="460" height="350" alt="Welcome to the gorgeus Sedona 'Because the Grand Canyon sucks'!">
         </div>
+        <span class="main-hero__decor">
+          <img src="/img/hero/hero-triangle-desctop.svg" width="1200" height="57" alt="Юзер бар.">
+        </span>
       </section>
       <section class="feedback">
         <h2 class="visually-hidden">Форма обратной связи.</h2>
@@ -210,5 +209,6 @@
         <button class="popup-form__button button" type="button">Закрыть окно</button>
       </div>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>

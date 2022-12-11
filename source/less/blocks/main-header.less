@@ -7,12 +7,6 @@
   flex-direction: column;
 }
 
-.main-header__logo {
-  width: 185px;
-  cursor: pointer;
-  margin: 0 auto;
-}
-
 @media (min-width: @tablet-width) {
   .main-header {
     flex-direction: row;
@@ -23,5 +17,21 @@
 @media (min-width: @desktop-width) {
   .main-header {
     width: 100%;
+  }
+}
+
+.main-header__logo {
+  width: 185px;
+  cursor: pointer;
+  margin: 0 auto -40px;
+  z-index: 2;
+}
+
+@media (min-width: @tablet-width) {
+  .main-header__logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
