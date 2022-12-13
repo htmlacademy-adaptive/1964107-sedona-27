@@ -7,127 +7,129 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="main-header">
-      <a class="main-header__logo">
-        <img class="main-header__logo-image" src="img/header/main-logo.svg" width="185" height="96" alt="логотип города Седона.">
-      </a>
-      <nav class="main-nav main-nav--closed">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню навигации</span>
-        </button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="index.html">
-              главная
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link site-list__link--current" href="catalog.html">
-              фото и видео
-            </a>
-          </li>
-          <li class="site-list__item site-list__item--space"></li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">
-              форма отзыва
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">
-              html academy
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main class="main-container">
-      <section class="main-hero">
-        <h2 class="visually-hidden">Блок приветствия.</h2>
-        <div class="main-hero__wrapper">
-          <img class="main-hero__image" src="/img/hero/hero-welcome-desctop.svg" width="460" height="350" alt="Welcome to the gorgeus Sedona 'Because the Grand Canyon sucks'!">
-        </div>
-        <span class="main-hero__decor">
-          <img src="/img/hero/hero-triangle-desctop.svg" width="1200" height="57" alt="Юзер бар.">
-        </span>
-      </section>
-      <section class="catalog">
-        <h1 class="catalog__title">фото и видео</h1>
-        <p class="catalog__discription">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
-        <div class="catalog__wrapper--turist-photo catalog__wrapper catalog-card">
-          <ul class="catalog-card__list">
-            <li class="catalog-card__item">
-              <img class="catalog-card__image" src="#" alt="дорога и горный пейзаж на закате.">
-              <h3 class="catalog-card__title">Народные просторы</h3>
-              <p class="catalog-card__discription">Автор фото: Борис</p>
-              <div class="catalog-card__wrapper--like catalog-card__wrapper">
-                <img class="catalog-card__icon-like" src="#" alt="Палец вверх.">
-                <div class="catalog-card__summa-like">1350</div>
-              </div>
+    <div class="page__container">
+      <header class="main-header">
+        <a class="main-header__logo">
+          <img class="main-header__logo-image" src="img/header/main-logo.svg" width="185" height="96" alt="логотип города Седона.">
+        </a>
+        <nav class="main-nav main-nav--closed">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню навигации</span>
+          </button>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="index.html">
+                главная
+              </a>
             </li>
-            <li class="catalog-card__item">
-              <img class="catalog-card__image" src="#" alt="цветущий кактус на фоне горного хребта.">
-              <h3 class="catalog-card__title">Местная растительность</h3>
-              <p class="catalog-card__discription">Автор фото: Сергей</p>
-              <div class="catalog-card__wrapper--like catalog-card__wrapper">
-                <img class="catalog-card__icon-like" src="#" alt="Палец вверх.">
-                <div class="catalog-card__summa-like">143</div>
-              </div>
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--current" href="catalog.html">
+                фото и видео
+              </a>
             </li>
-            <li class="catalog-card__item">
-              <img class="catalog-card__image" src="#" alt="дорога,вокруг лес.">
-              <h3 class="catalog-card__title">Дорога на север</h3>
-              <p class="catalog-card__discription">Автор фото: Петр</p>
-              <div class="catalog-card__wrapper--like catalog-card__wrapper">
-                <img class="catalog-card__icon-like" src="#" alt="Палец вверх.">
-                <div class="catalog-card__summa-like">96</div>
-              </div>
+            <li class="site-list__item site-list__item--space"></li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">
+                форма отзыва
+              </a>
             </li>
-            <li class="catalog-card__item">
-              <img class="catalog-card__image" src="#" alt="горный хребет,деревья,обрыв">
-              <h3 class="catalog-card__title">Мост дьявола</h3>
-              <p class="catalog-card__discription">Автор фото: Антон</p>
-              <div class="catalog-card__wrapper--like catalog-card__wrapper">
-                <img class="catalog-card__icon-like" src="#" alt="Палец вверх">
-                <div class="catalog-card__summa-like">254</div>
-              </div>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">
+                html academy
+              </a>
             </li>
           </ul>
-        </div>
-      </section>
-      <section class="catalog-video">
-        <h2 class="visually-hidden">Видео о городке Седона.</h2>
-        <div class="catalog-video__wrapper">
-          <h3 class="catalog-video__title">все еще сомневаетесь?</h3>
-          <p class="catalog-video__discription">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-          <img class="catalog-video__image" src="#" alt="Дорога,машины,горы.">
-          <img class="catalog-video__polygon" src="#" alt="кнопка начать просмотр.">
-        </div>
-      </section>
-    </main>
-    <footer class="main-footer">
-      <div class="main-footer__wrapper">
-        <div class="main-footer__social social">
-          <div class="social__title--wrapper social__title">
-            <p class="social__title">#visitSEDONA</p>
+        </nav>
+      </header>
+      <main class="main-container">
+        <section class="main-hero">
+          <h2 class="visually-hidden">Блок приветствия.</h2>
+          <div class="main-hero__wrapper">
+            <img class="main-hero__image" src="/img/hero/hero-welcome-desctop.svg" width="460" height="350" alt="Welcome to the gorgeus Sedona 'Because the Grand Canyon sucks'!">
           </div>
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="#">Мы в вк</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--youtube" href="#">Мы на ютуб</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--telegram" href="#">Мы в телеграм</a>
-            </li>
-          </ul>
-          <div class="main-footer__copyright copyright">
-            <p class="copyright__text">Разработано</p>
-            <a class="copyright__link" href="#">html academy</a>
+          <span class="main-hero__decor">
+            <img src="/img/hero/hero-triangle-desctop.svg" width="1200" height="57" alt="Юзер бар.">
+          </span>
+        </section>
+        <section class="catalog">
+          <h1 class="catalog__title">фото и видео</h1>
+          <p class="catalog__discription">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+          <div class="catalog__wrapper--turist-photo catalog__wrapper catalog-card">
+            <ul class="catalog-card__list">
+              <li class="catalog-card__item">
+                <img class="catalog-card__image" src="#" alt="дорога и горный пейзаж на закате.">
+                <h3 class="catalog-card__title">Народные просторы</h3>
+                <p class="catalog-card__discription">Автор фото: Борис</p>
+                <div class="catalog-card__wrapper--like catalog-card__wrapper">
+                  <img class="catalog-card__icon-like" src="#" alt="Палец вверх.">
+                  <div class="catalog-card__summa-like">1350</div>
+                </div>
+              </li>
+              <li class="catalog-card__item">
+                <img class="catalog-card__image" src="#" alt="цветущий кактус на фоне горного хребта.">
+                <h3 class="catalog-card__title">Местная растительность</h3>
+                <p class="catalog-card__discription">Автор фото: Сергей</p>
+                <div class="catalog-card__wrapper--like catalog-card__wrapper">
+                  <img class="catalog-card__icon-like" src="#" alt="Палец вверх.">
+                  <div class="catalog-card__summa-like">143</div>
+                </div>
+              </li>
+              <li class="catalog-card__item">
+                <img class="catalog-card__image" src="#" alt="дорога,вокруг лес.">
+                <h3 class="catalog-card__title">Дорога на север</h3>
+                <p class="catalog-card__discription">Автор фото: Петр</p>
+                <div class="catalog-card__wrapper--like catalog-card__wrapper">
+                  <img class="catalog-card__icon-like" src="#" alt="Палец вверх.">
+                  <div class="catalog-card__summa-like">96</div>
+                </div>
+              </li>
+              <li class="catalog-card__item">
+                <img class="catalog-card__image" src="#" alt="горный хребет,деревья,обрыв">
+                <h3 class="catalog-card__title">Мост дьявола</h3>
+                <p class="catalog-card__discription">Автор фото: Антон</p>
+                <div class="catalog-card__wrapper--like catalog-card__wrapper">
+                  <img class="catalog-card__icon-like" src="#" alt="Палец вверх">
+                  <div class="catalog-card__summa-like">254</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="catalog-video">
+          <h2 class="visually-hidden">Видео о городке Седона.</h2>
+          <div class="catalog-video__wrapper">
+            <h3 class="catalog-video__title">все еще сомневаетесь?</h3>
+            <p class="catalog-video__discription">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+            <img class="catalog-video__image" src="#" alt="Дорога,машины,горы.">
+            <img class="catalog-video__polygon" src="#" alt="кнопка начать просмотр.">
+          </div>
+        </section>
+      </main>
+      <footer class="main-footer">
+        <div class="main-footer__wrapper">
+          <div class="main-footer__social social">
+            <div class="social__title--wrapper social__title">
+              <p class="social__title">#visitSEDONA</p>
+            </div>
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--vkontakte" href="#">Мы в вк</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--youtube" href="#">Мы на ютуб</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--telegram" href="#">Мы в телеграм</a>
+              </li>
+            </ul>
+            <div class="main-footer__copyright copyright">
+              <p class="copyright__text">Разработано</p>
+              <a class="copyright__link" href="#">html academy</a>
+            </div>
           </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
     <script src="js/script.js"></script>
   </body>
 </html>
