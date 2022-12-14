@@ -1,24 +1,3 @@
-.advantages-header__wrapper {
-  padding: 32px 18px 16px;
-  text-align: center;
-  position: relative;
-}
-
-.advantages-header__title {
-  font-weight: 700;
-  text-transform: uppercase;
-  margin: 0 0 35px;
-}
-
-.advantages-header__discription {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  text-transform: uppercase;
-  color: @lightblack;
-  margin: 0;
-}
-
 .main-advantages__title {
   font-style: normal;
   font-weight: 700;
@@ -42,33 +21,11 @@
   justify-content: center;
 }
 
-.advantages-header__decor {
-  width: 768px;
-  height: 37px;
-  position: absolute;
-  bottom: -37px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.advantages-header__decor img {
-  width: 100%;
-  height: 100%;
-}
-
-@media (min-width: @tablet-width) {
-  .advantages-header__decor {
-    display: none;
-  }
-}
-
 .main-advantages__list {
   display: flex;
   flex-direction: column;
-}
 
-@media (min-width: @tablet-width) {
-  .main-advantages__list {
+  @media (min-width: @tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
   }
@@ -81,10 +38,8 @@
 
 .main-advantages__item:nth-child(1) {
   padding-top: 54px;
-}
 
-@media (min-width: @tablet-width) {
-  .main-advantages__item:nth-child(1) {
+  @media (min-width: @tablet-width) {
     padding-top: 33px;
   }
 }
@@ -98,6 +53,10 @@
   color: #ffffff;
 }
 
-.number {
+.main-advantages__discription.number {
   margin: 11px 0 17px;
+}
+
+.main-advantages__item.city-photo {
+  padding: 0;
 }

@@ -27,17 +27,13 @@
   list-style-type: none;
   display: flex;
   flex-direction: column;
-}
 
-@media (min-width: @tablet-width) {
-  .catalog-card__list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-}
+  @media (min-width: @tablet-width) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
 
-@media (min-width: @desktop-width) {
-  .catalog-card__list {
+  @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }

@@ -4,15 +4,23 @@
   color: #ffffff;
   background-color: #81b3d2;
   width: 100%;
-}
 
-@media (min-width: @tablet-width) {
-  .main-nav {
+  @media (min-width: @tablet-width) {
     color: #000000;
     font-size: 14px;
     line-height: 21px;
     background-color: #ffffff;
     box-shadow: none;
+  }
+}
+
+.main-nav.main-nav--opened {
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+
+  @media (min-width: @tablet-width) {
+    position: static;
   }
 }
 
@@ -28,23 +36,13 @@
   top: 0;
   right: 0;
   z-index: 1;
-}
 
-.main-nav.main-nav--opened {
-  position: absolute;
-  width: 100%;
-  z-index: 2;
-}
-
-@media (min-width: @tablet-width) {
-  .main-nav.main-nav--opened {
-    position: static;
+  @media (min-width: @tablet-width) {
+    display: none;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .main-nav.main-nav--opened {
-    position: static;
+  @media (min-width: @desktop-width) {
+    display: none;
   }
 }
 
@@ -87,38 +85,17 @@
 }
 
 @media (min-width: @tablet-width) {
-  .main-nav__toggle {
-    display: none;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .main-nav__toggle {
-    display: none;
-  }
-}
-
-@media (min-width: @tablet-width) {
   .main-nav__list.site-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
 }
 
 .site-list {
   margin: 0;
   padding: 0;
-}
 
-@media (min-width: @desktop-width) {
-  .site-list {
-    width: 100%;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .site-list {
+  @media (min-width: @desktop-width) {
     width: 100%;
   }
 }
@@ -142,6 +119,15 @@
     color: #000000;
     padding: 18px;
   }
+
+  .site-list__link:active {
+    opacity: 60%;
+    color: #000000;
+  }
+
+  .site-list__link:hover {
+  color: #766357;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -158,17 +144,6 @@
   justify-content: center;
   align-items: center;
   box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 2px 0 rgba(255, 255, 255, 0.2);
-}
-
-.site-list__item--space {
-  height: 56px;
-  background-color: #ffffff;
-}
-
-@media (max-width: @mobile-width-only) {
-  .site-list__item--space {
-    display: none;
-  }
 }
 
 .site-list__item:nth-last-child(1) {
@@ -188,11 +163,17 @@
   .site-list__item:nth-child(1) {
     box-shadow: none;
   }
+
+  .site-list__item:nth-child(3) {
+    grid-column-start: 4;
+  }
 }
 
 .site-list__item:active {
   background-color: #5496bd;
 }
+
+
 
 @media (max-width: @mobile-width-only) {
   .main-nav--opened .site-list__item:nth-last-child(1)::after {
