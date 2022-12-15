@@ -16,32 +16,22 @@
 
 .main-advantages__wrapper {
   min-width: 320px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 .main-advantages__list {
-  display: flex;
-  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 
   @media (min-width: @tablet-width) {
-    flex-direction: row;
+    display: flex;
     flex-wrap: wrap;
   }
 }
 
 .main-advantages__item {
-  padding: 33px 18px 40px;
   text-align: center;
-}
-
-.main-advantages__item:nth-child(1) {
-  padding-top: 54px;
-
-  @media (min-width: @tablet-width) {
-    padding-top: 33px;
-  }
+  min-width: 282px;
 }
 
 .main-advantages__item--recolor {
