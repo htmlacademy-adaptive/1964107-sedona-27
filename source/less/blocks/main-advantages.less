@@ -1,8 +1,10 @@
 .main-advantages__title {
+  font-size: 18px;
   font-style: normal;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 0;
+  margin: 0 auto 11px;
+  width: 284px;
 }
 
 .main-advantages__discription {
@@ -11,11 +13,27 @@
   line-height: 21px;
   text-transform: uppercase;
   color: @lightblack;
-  margin: 0;
+  margin: 0 auto 10px;
+  width: 282px;
+}
+
+.main-advantages__number {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: @lightblack;
+  margin: 0 auto 17px;
+  width: 284px;
+}
+
+.main-advantages__number--recolor {
+  color: #ffffff;
 }
 
 .main-advantages__wrapper {
   min-width: 320px;
+  position: relative;
 }
 
 .main-advantages__list {
@@ -29,13 +47,21 @@
   }
 }
 
+.main-advantages__item-wrapper {
+  background-color: #81b3d2;
+  padding: 71px 0 29px 0;
+}
+
+.main-advantages__item-wrapper--nodecor {
+  padding: 37px 0 25px;
+}
+
 .main-advantages__item {
   text-align: center;
   min-width: 282px;
 }
 
 .main-advantages__item--recolor {
-  background-color: #81b3d2;
   color: #ffffff;
 }
 
@@ -43,10 +69,40 @@
   color: #ffffff;
 }
 
-.main-advantages__discription.number {
-  margin: 11px 0 17px;
+.main-advantages__image {
+  width: 100%;
+  background-color: @pagegray;
+  display: block;
 }
 
-.main-advantages__item.city-photo {
+.main-advantages__sublist {
+  list-style: none;
+  background-color: #ffffff;
+  color: #000000;
+  text-align: start;
+  margin: 0 auto;
+  padding: 23px 18px;
+  width: 284px;
+  text-transform: uppercase;
+}
+
+.main-advantages__item--wrapper-background-recolor {
+  background-color: #d6d6d6;
+  padding: 24px 0 28px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.main-advantages__item--background-recolor {
+  width: 268px;
   padding: 0;
+  margin: 0 auto;
+}
+
+.main-advantages__discription--decor {
+  padding-bottom: 24px;
+}
+
+.main-advantages__title--decor {
+  margin-top: 24px;
 }
