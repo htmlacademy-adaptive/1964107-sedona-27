@@ -9,8 +9,8 @@
   <body class="page__body">
     <div class="page__container">
       <header class="main-header">
-        <a class="main-header__logo">
-          <img class="main-header__logo-image" src="img/header/main-logo.svg" width="185" height="96" alt="логотип города Седона.">
+        <a class="main-header__logo" href="index.html">
+          <img class="main-header__logo-image" src="/img/header/main-logo.svg" width="185" height="96" alt="логотип города Седона.">
         </a>
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button">
@@ -33,7 +33,7 @@
               </a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="#">
+              <a class="site-list__link" href="https://htmlacademy.ru/">
                 html academy
               </a>
             </li>
@@ -45,7 +45,7 @@
         <section class="main-hero">
           <h2 class="visually-hidden">Блок приветствия.</h2>
           <div class="main-hero__wrapper">
-            <img class="main-hero__image" src="../img/hero/hero-welcome-mobile.svg" width="282" height="214" alt="Welcome to the gorgeus Sedona 'Because the Grand Canyon sucks'!">
+            <img class="main-hero__image" src="/img/hero/hero-welcome-mobile.svg" width="282" height="214" alt="Welcome to the gorgeus Sedona 'Because the Grand Canyon sucks'!">
           </div>
         </section>
         <section class="main-advantages">
@@ -57,12 +57,14 @@
             </div>
             <ul class="main-advantages__list">
               <li class="main-advantages__item main-advantages__item--recolor">
-                <div class="main-advantages__item-wrapper">
-                  <h3 class="main-advantages__title main-advantages__title--recolor">Настоящий городок</h3>
-                  <p class="main-advantages__number main-advantages__number--recolor">— №1 —</p>
-                  <p class="main-advantages__discription main-advantages__discription--recolor">Седона не аттракцион для туристов, там течет своя жизнь</p>
+                <div class="main-advantages__wrapper-tablet">
+                  <div class="main-advantages__item-wrapper">
+                    <h3 class="main-advantages__title main-advantages__title--recolor">Настоящий городок</h3>
+                    <p class="main-advantages__number main-advantages__number--recolor">— №1 —</p>
+                    <p class="main-advantages__discription main-advantages__discription--recolor">Седона не аттракцион для туристов, там течет своя жизнь</p>
+                  </div>
+                  <img class="main-advantages__image" src="/img/advantages/photo-city-mobile.jpg" width="320" height="260" alt="Фото города,здание,флаги,деревья.">
                 </div>
-                <img class="main-advantages__image" src="../img/advantages/photo-city-mobile.jpg" width="320" height="260" alt="Фото города,здание,флаги,деревья.">
                 <ul class="main-advantages__sublist sublist-item">
                   <li class="sublist-item__wrapper sublist-item__wrapper--house">
                     <p class="sublist-item__title">Жилье</p>
@@ -79,12 +81,14 @@
                 </ul>
               </li>
               <li class="main-advantages__item main-advantages__item--recolor">
-                <div class="main-advantages__item-wrapper main-advantages__item-wrapper--nodecor">
-                  <h3 class="main-advantages__title main-advantages__title--recolor">Там есть мост дьявола</h3>
-                  <p class="main-advantages__number main-advantages__number--recolor">— №2 —</p>
-                  <p class="main-advantages__discription main-advantages__discription--recolor">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+                <div class="main-advantages__wrapper-tablet">
+                  <div class="main-advantages__item-wrapper main-advantages__item-wrapper--nodecor">
+                    <h3 class="main-advantages__title main-advantages__title--recolor">Там есть мост дьявола</h3>
+                    <p class="main-advantages__number main-advantages__number--recolor">— №2 —</p>
+                    <p class="main-advantages__discription main-advantages__discription--recolor">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+                  </div>
+                  <img class="main-advantages__image" src="../img/advantages/photo-bridge-mobile.jpg" width="320" height="260" alt="Горный хребет,деревья,обыв">
                 </div>
-                <img class="main-advantages__image" src="../img/advantages/photo-bridge-mobile.jpg" width="320" height="260" alt="Горный хребет,деревья,обыв">
               </li>
               <div class="main-advantages__item main-advantages__item--wrapper-background-recolor">
                 <li class="main-advantages__item main-advantages__item--background-recolor">
@@ -125,14 +129,23 @@
           <div class="main-footer__social social">
             <p class="social__title">#visitSEDONA</p>
             <ul class="social__list">
-              <li class="social__item">
-                <a class="social__link social__link--vkontakte" href="#">Мы в вк</a>
+              <li class="social__item social__item--vkontakte">
+                <a class="social__link" href="#">
+                  <span class="visually-hidden">Мы в вк</span>
+                  <img class="social__image" src="/img/footer/icon-vk.svg" width="24" height="24" alt="Мы в вконтакте.">
+                </a>
               </li>
-              <li class="social__item">
-                <a class="social__link social__link--youtube" href="#">Мы на ютуб</a>
+              <li class="social__item social__item--telegram">
+                <a class="social__link" href="#">
+                  <span class="visually-hidden">Мы в телеграм</span>
+                  <img class="social__image" src="/img/footer/icon-telegram.svg" width="24" height="24" alt="Мы в телеграм.">
+                </a>
               </li>
-              <li class="social__item">
-                <a class="social__link social__link--telegram" href="#">Мы в телеграм</a>
+              <li class="social__item social__item--youtube">
+                <a class="social__link" href="#">
+                  <span class="visually-hidden">Мы на ютуб</span>
+                  <img class="social__image" src="/img/footer/icon-youtube.svg" width="24" height="24" alt="Мы в ютуб.">
+               </a>
               </li>
             </ul>
             <div class="main-footer__copyright copyright">
