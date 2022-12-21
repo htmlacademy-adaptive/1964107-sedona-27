@@ -9,7 +9,12 @@
   font-weight: 700;
   text-transform: uppercase;
   margin: 0 auto 20px;
-  width: 262px;
+  max-width: 262px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    max-width: 435px;
+  }
 }
 
 .main-search__discription {
@@ -19,7 +24,12 @@
   text-transform: uppercase;
   color: @lightblack;
   margin: 0 auto 32px;
-  width: 262px;
+  max-width: 262px;
+
+  @media (min-width: @tablet-width) {
+    line-height: 26px;
+    max-width: 435px;
+  }
 }
 
 .main-search__button {
@@ -30,13 +40,17 @@
   color: #ffffff;
   text-decoration: none;
   background-color: #81b3d2;
-  width: 284px;
+  max-width: 284px;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 16px 0;
   margin: 0 auto 49px;
   cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    max-width: 458px;
+  }
 }
 
 .main-search__button:hover {
