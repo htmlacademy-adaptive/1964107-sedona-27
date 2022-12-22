@@ -1,7 +1,18 @@
+.catalog-video {
+  @media (min-width: @tablet-width) {
+    padding: 18px 60px 40px;
+  }
+}
+
 .catalog-video__title {
   font-weight: 700;
   font-size: 18px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 0 25px;
+    font-size: 30px;
+  }
 }
 
 .catalog-video__discription {
@@ -10,4 +21,21 @@
   line-height: 21px;
   text-transform: uppercase;
   color: @lightblack;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 0 15px;
+  }
+}
+
+.catalog-video__wrapper {
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+    max-width: 445px;
+    text-align: center;
+    padding-bottom: 55px;
+  }
+}
+
+.catalog-video__image {
+  width: 100%;
 }

@@ -10,12 +10,17 @@
   background-repeat: no-repeat;
 }
 
+.main-hero.main-hero--catalog {
+  background-image: url("/img/hero/back-hero-catalog-mobile.jpg");
+}
+
 .main-hero::after {
   content: "";
   position: absolute;
   bottom: 0;
   width: 100%;
   height: 57px;
+  bottom: -1px;
   background-image: url("/img/hero/hero-triangle-desctop.svg");
   background-position: center, bottom;
 }
@@ -32,6 +37,12 @@
   height: 214px;
   padding: 50px 10px 28px;
   margin-bottom: 28px;
+}
+
+.main-hero__image--catalog {
+  width: 229px;
+  height: 39px;
+  padding: 16px 10px 10px;
 }
 
 .main-hero__decor {

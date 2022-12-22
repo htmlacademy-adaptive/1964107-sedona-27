@@ -1,7 +1,19 @@
+.catalog {
+  @media (min-width: @tablet-width) {
+    padding:66px 60px 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 100px 0 62px;
+  }
+}
+
 .catalog__title {
   font-weight: 700;
-  font-size: 18px;
+  font-size: 21px;
   text-transform: uppercase;
+  text-align: center;
+  margin: 0 0 35px;
 }
 
 .catalog__discription {
@@ -9,5 +21,7 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+  text-align: center;
+  margin: 0 0 25px;
   color: @lightblack;
 }
