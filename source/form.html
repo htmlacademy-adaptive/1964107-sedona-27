@@ -42,20 +42,19 @@
       </header>
       <main class="main-container">
         <h1 class="visually-hidden">Страница формы обратной связи.</h1>
-        <section class="main-hero">
+        <section class="main-hero main-hero--catalog">
           <h2 class="visually-hidden">Блок приветствия.</h2>
-          <div class="main-hero__wrapper">
-            <img class="main-hero__image" src="/img/hero/hero-welcome-desctop.svg" width="460" height="350" alt="Welcome to the gorgeus Sedona 'Because the Grand Canyon sucks'!">
+          <div class="main-hero__wrapper main-hero__wrapper--catalog">
+            <img class="main-hero__image main-hero__image--catalog" src="/img/hero/hero-catalog-sedona.svg" width="229" height="39" alt="Sedona.">
           </div>
-          <span class="main-hero__decor">
-            <img src="/img/hero/hero-triangle-desctop.svg" width="1200" height="57" alt="Юзер бар.">
-          </span>
         </section>
         <section class="feedback">
           <h2 class="visually-hidden">Форма обратной связи.</h2>
           <div class="feedback__wrapper">
-            <h2 class="feedback__title">Оставьте свой отзыв</h2>
-            <p class="feedback__discription">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+            <div class="feedback__head-wrapper">
+              <h2 class="feedback__title">Оставьте свой отзыв</h2>
+              <p class="feedback__discription">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+            </div>
             <form class="feedback-form feedback" action="https://echo.htmlacademy.ru/" method="get">
               <div class="feedback-form__wrapper turist-contacts">
                 <fieldset class="feedback-form__name">
@@ -85,13 +84,11 @@
                       <label class="feedback-form__number">Контактный телефон*:
                         <input class="feedback-form__input--contacts feedback-form__input" placeholder="Введите телефон" type="text" id="feedback-contacts__number" name="phone number">
                       </label>
-                      <img class="feedback-form__icon" src="#" alt="Трубка телефона">
                     </li>
                     <li class="feedback-form__item">
                       <label class="feedback-form__email">Электронная почта*:
                         <input class="feedback-form__input--contacts feedback-form__input" placeholder="Введите e-mail" type="email" id="feedback-contacts__email" name="phone number">
                       </label>
-                      <img class="feedback-form__icon" src="#" alt="Конверт почты">
                     </li>
                   </ul>
                 </fieldset>
@@ -100,21 +97,21 @@
                 <fieldset class="feedback-form__effects">
                   <legend class="feedback-form__title">Ваше общее впечатление:</legend>
                   <ul class="feedback-form__list">
-                    <li class="feedback-form__item">
-                      <label class="feedback-form__radio feedback-form__radio--current">
-                        <input class="feedback-form__input--radio feedback-form__input visually-hidden" type="radio" name="effects">
+                    <li class="feedback-form__item--radio feedback-form__item">
+                      <label class="feedback-form__radio">
+                        <input class="feedback-form__input--radio feedback-form__input visually-hidden" type="radio" name="effects" checked>
                         <span class="feedback-form__marcer"></span>
                         <span class="feedback-form__label">Скорее положительное</span>
                       </label>
                     </li>
-                    <li class="feedback-form__item">
+                    <li class="feedback-form__item--radio feedback-form__item">
                       <label class="feedback-form__radio">
                         <input class="feedback-form__input--radio feedback-form__input visually-hidden" type="radio" name="effects">
                         <span class="feedback-form__marcer"></span>
                         <span class="feedback-form__label">Скорее отрицательное</span>
                       </label>
                     </li>
-                    <li class="feedback-form__item">
+                    <li class="feedback-form__item--radio feedback-form__item">
                       <label class="feedback-form__radio">
                         <input class="feedback-form__input--radio feedback-form__input visually-hidden" type="radio" name="effects">
                         <span class="feedback-form__marcer"></span>
@@ -157,7 +154,7 @@
                   </ul>
                 </fieldset>
                 <fieldset class="feedback-form__comment">
-                  <legend class="feedback-form__tittle">Опишите свои эмоции:</legend>
+                  <legend class="feedback-form__title">Опишите свои эмоции:</legend>
                   <label class="feedback-form__label">
                     <input class="feedback-form__input--comment feedback-form__input" type="text" placeholder="Опишите подробно все свои восторги" id="feedback-comment__label" name="comment">
                   </label>
@@ -174,23 +171,29 @@
       <footer class="main-footer">
         <div class="main-footer__wrapper">
           <div class="main-footer__social social">
-            <div class="social__title--wrapper social__title">
-              <p class="social__title">#visitSEDONA</p>
-            </div>
+            <p class="social__title">#visitSEDONA</p>
             <ul class="social__list">
-              <li class="social__item">
-                <a class="social__link social__link--vkontakte" href="#">Мы в вк</a>
+              <li class="social__item ">
+                <a class="social__link social__link--vkontakte" href="#">
+                  <span class="visually-hidden">Мы в вк</span>
+                </a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--youtube" href="#">Мы на ютуб</a>
+                <a class="social__link social__link--telegram" href="#">
+                  <span class="visually-hidden">Мы в телеграм</span>
+                </a>
               </li>
-              <li class="social__item">
-                <a class="social__link social__link--telegram" href="#">Мы в телеграм</a>
+              <li class="social__item ">
+                <a class="social__link social__link--youtube" href="#">
+                  <span class="visually-hidden">Мы на ютуб</span>
+               </a>
               </li>
             </ul>
             <div class="main-footer__copyright copyright">
               <p class="copyright__text">Разработано</p>
-              <a class="copyright__link" href="#">html academy</a>
+              <a class="copyright__link" href="https://htmlacademy.ru/">
+                <svg aria-label="Сайт разработчика" width="27" height="35" viewBox="0 0 27 35" xmlns="http://www.w3.org/2000/svg"><path d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z"/></svg>
+              </a>
             </div>
           </div>
         </div>

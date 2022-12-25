@@ -1,4 +1,7 @@
 .catalog-video {
+  padding: 17px 20px 0;
+  text-align: center;
+
   @media (min-width: @tablet-width) {
     padding: 18px 60px 40px;
   }
@@ -8,6 +11,7 @@
   font-weight: 700;
   font-size: 18px;
   text-transform: uppercase;
+  margin: 0 0 28px;
 
   @media (min-width: @tablet-width) {
     margin: 0 0 25px;
@@ -21,6 +25,7 @@
   line-height: 21px;
   text-transform: uppercase;
   color: @lightblack;
+  margin: 0;
 
   @media (min-width: @tablet-width) {
     margin: 0 0 15px;
@@ -28,6 +33,9 @@
 }
 
 .catalog-video__wrapper {
+  padding: 0 6px 38px 8px;
+  min-height: 116px;
+
   @media (min-width: @tablet-width) {
     margin: 0 auto;
     max-width: 445px;
@@ -36,6 +44,23 @@
   }
 }
 
+.catalog-video__image-wrapper {
+  position: relative;
+}
+
 .catalog-video__image {
   width: 100%;
+  display: block;
+}
+
+.catalog-video__image-wrapper::before {
+  content: "";
+  position: absolute;
+  width: 48px;
+  height: 54px;
+  background-image: url("/img/catalog-main/catalog-video-play.svg");
+  cursor: pointer;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }

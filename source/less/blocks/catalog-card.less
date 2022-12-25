@@ -3,7 +3,7 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
-  margin: 15px 0 12px;
+  margin: 14px 0 0;
 
   @media (min-width: @tablet-width) {
     margin-top: 0;
@@ -21,6 +21,10 @@
   @media (min-width: @tablet-width) {
     margin: 0;
   }
+
+  @media (min-width: @desktop-width) {
+    color: #ffffff;
+  }
 }
 
 .catalog-card__wrapper {
@@ -36,11 +40,15 @@
 
 .catalog-card__icon-like {
   margin: 0 14px 0 0;
+  opacity: 0.3;
 
+  @media (min-width: @desktop-width) {
+    fill: #ffffff;
+    opacity: 1;
+  }
 }
 
 .catalog-card__link {
-  width: 100%;
   height: 100%;
   cursor: pointer;
 }
@@ -109,10 +117,22 @@
     background-color: @lightgray;
     padding: 22px 20px 15px;
   }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+  }
 }
 
-.catalog-card__hooter-wrapper--recolor {
+.catalog-card__footer-wrapper--recolor {
   @media (min-width: @tablet-width) {
-    background-color: #eaeaea;
+    background: #eaeaea;
+  }
+
+  @media (min-width: @desktop-width) {
+    background: rgba(0, 0, 0, 0.3);
   }
 }
