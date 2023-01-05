@@ -11,12 +11,28 @@
 }
 
 .feedback__head-wrapper {
+  position: relative;
   margin: 0 auto;
   max-width: 280px;
   text-align: center;
+  padding: 0 0 12px 0;
 
   @media (min-width: @tablet-width) {
     max-width: 435px;
+  }
+}
+
+.feedback__head-wrapper::after {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 1px;
+  background-color: #e5e5e5;
+  right: -20px;
+  bottom: 0;
+
+  @media (min-width: @tablet-width) {
+    display: none;
   }
 }
 
@@ -37,7 +53,7 @@
   line-height: 21px;
   text-transform: uppercase;
   color: @lightblack;
-  margin: 0 0 28px;
+  margin: 0 0 14px;
 }
 
 .feedback__form {
