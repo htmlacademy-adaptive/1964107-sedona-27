@@ -4,11 +4,34 @@
 
 .main-map__wrapper {
   background-color: #ffffff;
+  position: relative;
+}
+
+.main-map__wrapper::after {
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 27px;
+  border: 5px solid #ffffff;
+  border-radius: 50%;
+  background-color: #81b3d3;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  z-index: 2;
 }
 
 .main-map__image {
   width: 100%;
   display: block;
+}
+
+.main-map__google-cart {
+  max-height: 350px;
+  width: 100%;
+  position: absolute;
+  z-index: 3;
 }
 
 .main-map__marker {
