@@ -1,19 +1,30 @@
 .main-header {
   background-color: #ffffff;
+  min-width: 320px;
+  min-height: 56px;
+  position: relative;
   display: flex;
   flex-direction: column;
-  min-width: 320px;
-}
 
-@media (min-width: @tablet-width) {
-  .main-header {
+  @media (min-width: @tablet-width) {
     flex-direction: row;
     width: 100%;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+    z-index: 1;
+  }
 }
 
-@media (min-width: @desktop-width) {
-  .main-header {
-    width: 100%;
-  }
+.main-header__logo {
+  width: 185px;
+  height: 96px;
+  cursor: pointer;
+  margin: 0 0 40px;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }

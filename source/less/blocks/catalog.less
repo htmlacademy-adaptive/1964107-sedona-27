@@ -1,7 +1,33 @@
+.catalog {
+  @media (min-width: @tablet-width) {
+    padding: 66px 60px 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 100px 0 62px;
+  }
+}
+
+.catalog__head-wrapper {
+  padding: 40px 20px 25px;
+
+  @media (min-width: @desktop-width) {
+    width: 458px;
+    min-height: 100px;
+    margin: 0 auto;
+  }
+}
+
 .catalog__title {
   font-weight: 700;
   font-size: 18px;
   text-transform: uppercase;
+  text-align: center;
+  margin: 0 0 24px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 26px;
+  }
 }
 
 .catalog__discription {
@@ -9,5 +35,11 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+  text-align: center;
+  margin: 0 0 12px;
   color: @lightblack;
+
+  @media (min-width: @tablet-width) {
+    font-size: 12px;
+  }
 }
