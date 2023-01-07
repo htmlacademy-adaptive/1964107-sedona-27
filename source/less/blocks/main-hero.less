@@ -5,13 +5,54 @@
   justify-content: center;
   background-color: @pagegray;
   background-image: url("/img/hero/back-hero-mobile.jpg");
-  background-position: center;
+  background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("/img/hero/back-hero-mobile@x2.jpg");
+  }
+
+  @media (min-width: @tablet-width) {
+    background-image: url("/img/hero/back-hero-tablet.jpg");
+  }
+
+  @media (min-resolution: 2dppx) and (min-width: @tablet-width) {
+    background-image: url("/img/hero/back-hero-tablet@2x.jpg");
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("/img/hero/hero-back-desctop.jpg");
+  }
+
+  @media (min-resolution: 2dppx) and (min-width: @desktop-width) {
+    background-image: url("/img/hero/hero-back-desctop@x2.jpg");
+  }
 }
 
 .main-hero.main-hero--catalog {
   background-image: url("/img/hero/back-hero-catalog-mobile.jpg");
+  background-position: bottom center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("/img/catalog-main/back-hero-catalog-mobile@2x.jpg");
+  }
+
+  @media (min-width: @tablet-width) {
+    background-image: url("/img/catalog-main/back-tablet-catalog-hero@1x.jpg");
+  }
+
+  @media (min-resolution: 2dppx) and (min-width: @tablet-width) {
+    background-image: url("/img/catalog-main/back-tablet-catalog-hero@2x.jpg");
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("/img/catalog-main/back-desktop-catalog-hero@1x.jpg");
+  }
+
+  @media (min-resolution: 2dppx) and (min-width: @desktop-width) {
+    background-image: url("/img/catalog-main/back-desktop-catalog-hero@2x.jpg");
+  }
 }
 
 .main-hero::after {
@@ -29,21 +70,40 @@
   flex-wrap: wrap;
   justify-content: center;
   padding: 90px 0 56px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 75px;
+  }
 }
 
 .main-hero__wrapper--catalog {
   padding: 52px 2px 39px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 95px;
+    padding-bottom: 87px;
+  }
 }
 
 .main-hero__image {
   width: 282px;
   height: 214px;
   margin-bottom: 28px;
+
+  @media (min-width: @tablet-width) {
+    width: 461px;
+    height: 350px;
+  }
 }
 
 .main-hero__image--catalog {
   width: 229px;
   height: 39px;
+
+  @media (min-width: @tablet-width) {
+    width: 457px;
+    height: 78px;
+  }
 }
 
 .main-hero__decor {
