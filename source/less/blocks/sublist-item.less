@@ -12,6 +12,13 @@
     padding: 60px 30px;
     margin: 0;
   }
+
+  @media (min-width: @desktop-width) {
+    min-width: 400px;
+    padding: 0;
+    min-height: 330px;
+    align-items: center;
+  }
 }
 
 .sublist-item__wrapper--decor::before {
@@ -32,18 +39,27 @@
     transform: translateX(-50%);
     background-size: contain;
   }
+
+  @media (min-width: @desktop-width) {
+    top: 66px;
+    left: 49%;
+  }
 }
 
 .sublist-item__burger::before {
-  background-image: url("/img/advantages/icon-burger.svg.svg");
+  background-image: url("../img/advantages/icon-burger.svg.svg");
 }
 
 .sublist-item__house::before {
-  background-image: url("/img/advantages/icon-house.svg.svg");
+  background-image: url("../img/advantages/icon-house.svg.svg");
 }
 
 .sublist-item__gift::before {
-  background-image: url("/img/advantages/icon-gift.svg.svg");
+  background-image: url("../img/advantages/icon-gift.svg.svg");
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/advantages/icon-gift-desktop.svg");
+  }
 }
 
 .sublist-item__title {
@@ -58,6 +74,10 @@
     text-align: center;
     margin-bottom: 30px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 22px;
+  }
 }
 
 .sublist-item__discription {
@@ -69,5 +89,18 @@
   @media (min-width: @tablet-width) {
     width: 190px;
     text-align: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 300px;
+    margin-bottom: 69px;
+  }
+}
+
+.sublist-item__desktop-display {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
   }
 }
