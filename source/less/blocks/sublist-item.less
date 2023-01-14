@@ -8,8 +8,8 @@
     min-height: 331px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    padding: 60px 30px;
+    align-items: center;
+    padding: 59px 7px 10px 5px;
     margin: 0;
   }
 
@@ -32,11 +32,9 @@
   left: 0;
 
   @media (min-width: @tablet-width) {
+    position: static;
     width: 80px;
     height: 80px;
-    top: 54px;
-    left: 50%;
-    transform: translateX(-50%);
     background-size: contain;
   }
 
@@ -72,7 +70,7 @@
     font-size: 21px;
     width: 190px;
     text-align: center;
-    margin-bottom: 30px;
+    margin: 17px 0 23px;
   }
 
   @media (min-width: @desktop-width) {
@@ -87,13 +85,19 @@
   margin: 0;
 
   @media (min-width: @tablet-width) {
-    width: 190px;
+    width: 168px;
     text-align: center;
   }
 
   @media (min-width: @desktop-width) {
     width: 300px;
     margin-bottom: 69px;
+  }
+}
+
+.sublist-item__burger .sublist-item__discription {
+  @media (min-width: @tablet-width) {
+    width: 157px;
   }
 }
 
