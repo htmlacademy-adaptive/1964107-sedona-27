@@ -67,6 +67,7 @@
 
 .feedback-form__title--decor::after {
   content: "";
+  display: none;
   position: absolute;
   width: 320px;
   height: 1px;
@@ -75,6 +76,7 @@
   bottom: 3px;
 
   @media (min-width: @tablet-width) {
+    display: block;
     width: 123px;
     background: #dbdbdb;
     top: 50%;
@@ -89,8 +91,11 @@
 }
 
 .feedback-form__title--decor::before {
+  display: none;
+
   @media (min-width: @tablet-width) {
     content: "";
+    display: block;
     position: absolute;
     height: 1px;
     width: 123px;
@@ -217,6 +222,11 @@
   outline: 4px solid #e5e5e5;
 }
 
+.feedback-form__input:focus {
+  background-color: #ffffff;
+  outline: 4px solid #e5e5e5;
+}
+
 .feedback-form__input--contacts.feedback-form__input {
   padding-right: 74px;
   width: 100%;
@@ -334,9 +344,11 @@
   background-color: #e5e5e5;
   right: -20px;
   bottom: 1px;
+  box-shadow: 0 267px 0 0 #e5e5e5;
 
   @media (min-width: @tablet-width) {
     display: none;
+    box-shadow: none;
   }
 }
 
@@ -422,10 +434,6 @@
 
 .feedback-form__marcer--radio {
   border-radius: 50%;
-}
-
-.feedback-form__marcer::after:active {
-  opacity: 30%;
 }
 
 .feedback-form__radio .feedback-form__input--radio[type="radio"]:checked + .feedback-form__marcer::before,

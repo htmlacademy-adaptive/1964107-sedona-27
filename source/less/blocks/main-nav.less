@@ -50,6 +50,14 @@
   background-color: transparent;
 }
 
+.main-nav__toggle:hover {
+  opacity: 60%;
+}
+
+.main-nav__toggle:active {
+  opacity: 30%;
+}
+
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
@@ -64,9 +72,9 @@
 .main-nav--opened .main-nav__toggle::before {
   content: "";
   position: absolute;
-  top: 17px;
-  right: 20px;
-  width: 23px;
+  top: 26px;
+  right: 16px;
+  width: 28px;
   height: 4px;
   background-color: #ffffff;
   transform: rotate(45deg);
@@ -76,9 +84,9 @@
 .main-nav--opened .main-nav__toggle::after {
   content: "";
   position: absolute;
-  top: 17px;
-  right: 20px;
-  width: 23px;
+  top: 26px;
+  right: 16px;
+  width: 28px;
   height: 4px;
   background-color: #ffffff;
   transform: rotate(-45deg);
