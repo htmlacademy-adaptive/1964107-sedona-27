@@ -5,9 +5,9 @@
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.3);
-  display: flex;
   justify-content: center;
   z-index: 2;
+  display: none;
 }
 
 .popup-form {
@@ -17,6 +17,7 @@
 
 .popup-form__fail {
   margin: auto;
+  display: none;
 }
 
 .popup-form__wrapper {
@@ -152,6 +153,16 @@
   justify-content: center;
   align-items: center;
   border: none;
+  cursor: pointer;
+
+  &:hover {
+    background: #669ec0;
+  }
+
+  &:active {
+    background: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
 
   @media (min-width: @tablet-width) {
     width: 458px;

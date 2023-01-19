@@ -206,6 +206,7 @@
   min-height: 58px;
   min-width: 280px;
   font-family: inherit;
+  transition: background 0.3s ease-in-out;
 
   @media (min-width: @desktop-width) {
     min-width: 430px;
@@ -432,12 +433,15 @@
   background-color: #d5d5d5;
 }
 
+.feedback-form__marcer:active::before {
+  opacity: 0.3;
+}
+
 .feedback-form__marcer--radio {
   border-radius: 50%;
 }
 
-.feedback-form__radio .feedback-form__input--radio[type="radio"]:checked + .feedback-form__marcer::before,
-.feedback-form__radio .feedback-form__input--radio[type="radio"]:checked + .feedback-form__marcer::after {
+.feedback-form__radio .feedback-form__input--radio[type="radio"]:checked + .feedback-form__marcer::before {
   content: "";
   position: absolute;
   width: 16px;
@@ -453,8 +457,7 @@
   padding: 12px 10px 10px 62px;
 }
 
-.feedback-form__checkbox .feedback-form__input--checkbox[type="checkbox"]:checked + .feedback-form__marcer::before,
-.feedback-form__checkbox .feedback-form__input--checkbox[type="checkbox"]:checked + .feedback-form__marcer::after {
+.feedback-form__checkbox .feedback-form__input--checkbox[type="checkbox"]:checked + .feedback-form__marcer::before {
   content: "";
   position: absolute;
   width: 22px;
@@ -463,6 +466,10 @@
   top: calc(50% - 16px / 2 + 0.45px);
   background-image: url("/img/form-main/chekcbox.svg");
   background-repeat: no-repeat;
+}
+
+.feedback-form__input:focus ~ .feedback-form__marcer {
+  outline: 2px solid #000000;
 }
 
 .feedback-form__showplace {
