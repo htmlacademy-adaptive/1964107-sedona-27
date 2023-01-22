@@ -11,6 +11,8 @@ import svgo from "gulp-svgmin";
 import svgstore from "gulp-svgstore";
 import del from "del";
 import browser from "browser-sync";
+import { minify } from "html-minifier";
+import gulpMinify from "gulp-minify";
 
 // Styles
 
@@ -31,11 +33,29 @@ const html = () => {
   return gulp.src("source/*.html").pipe(gulp.dest("build"));
 };
 
+const htmlWithMinify = () => {
+  return gulp
+    .src("source/*.html")
+    .on("data", (file) => {
+      const bufferFile = Buffer.from(
+        minify(file.contents.toString(), {
+          removeAttributeQuotes: true,
+          removeComments: true,
+          removeTagWhitespace: true,
+        })
+      );
+
+      return file.contents = bufferFile;
+    })
+    .pipe(gulp.dest("build"));
+};
+
 // Scripts
 
 const scripts = () => {
   return gulp
     .src("source/js/script.js")
+    .pipe(gulpMinify())
     .pipe(gulp.dest("build/js"))
     .pipe(browser.stream());
 };
@@ -139,7 +159,7 @@ export const build = gulp.series(
   clean,
   copy,
   optimizeImages,
-  gulp.parallel(styles, html, scripts, svg, sprite, createWebp)
+  gulp.parallel(styles, htmlWithMinify, scripts, svg, sprite, createWebp)
 );
 
 // Default
