@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html class=page lang=ru>
+  <head>
+    <meta charset=utf-8>
+    <meta name=viewport content="width=device-width,initial-scale=1">
+    <link rel=icon href=favicon.ico>
+    <link rel=apple-touch-icon sizes=180x180 href=img/favicons/apple-touch-icon.png>
+    <link rel=icon type=image/png sizes=32x32 href=img/favicons/favicon-32x32.png>
+    <link rel=icon type=image/png sizes=16x16 href=img/favicons/favicon-16x16.png>
+    <link rel=manifest href=/site.webmanifest>
+    <meta name=msapplication-TileColor content=#da532c>
+    <meta name=theme-color content=#ffffff>
+    <title>HTML Academy: Седона</title>
+    <link rel=stylesheet href=css/style.min.css>
+    <link rel=preload href=fonts/ptsans.woff2 as=font type=font/woff2 crossorigin=anonymous>
+    <link rel=preload href=fonts/ptsans.woff as=font type=font/woff crossorigin=anonymous>
+    <link rel=preload href=fonts/ptsansbold.woff2 as=font type=font/woff2 crossorigin=anonymous>
+    <link rel=preload href=fonts/ptsansbold.woff as=font type=font/woff crossorigin=anonymous>
+    <base href="https://htmlacademy-adaptive.github.io/1964107-sedona-27/10/">
+</head>
+  <body class=page__body>
+    <svg style="display: none">
+      <symbol viewBox="0 0 27 35"id=developer-adress><path d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z"/></symbol>
+      <symbol viewBox="0 0 23 21"id=icon-like><path d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z"/></symbol>
+    </svg>
+    <div class=page__container>
+      <header class=main-header>
+        <a class=main-header__logo>
+          <img class=main-header__logo-image src=img/header/main-logo.svg width=185 height=96 alt="логотип города Седона.">
+        </a>
+        <nav class="main-nav main-nav--closed">
+          <button class=main-nav__toggle type=button>
+            <span class=visually-hidden>Открыть меню навигации</span>
+          </button>
+          <ul class="main-nav__list site-list">
+            <li class=site-list__item>
+              <a class=site-list__link href=index.html>
+                главная
+              </a>
+            </li>
+            <li class=site-list__item>
+              <a class="site-list__link site-list__link--current"href=catalog.html>
+                фото и видео
+              </a>
+            </li>
+            <li class=site-list__item>
+              <a class=site-list__link href=form.html>
+                форма отзыва
+              </a>
+            </li>
+            <li class=site-list__item>
+              <a class=site-list__link href=#>
+                html academy
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main-container main-container__catalog">
+        <section class="main-hero main-hero--catalog">
+          <h2 class=visually-hidden>Блок приветствия.</h2>
+          <div class="main-hero__wrapper main-hero__wrapper--catalog">
+            <img class="main-hero__image main-hero__image--catalog"src=img/hero/hero-catalog-sedona.svg width=229 height=39 alt=Sedona.>
+          </div>
+        </section>
+        <section class=catalog>
+          <div class=catalog__head-wrapper>
+            <h1 class=catalog__title>фото и видео</h1>
+            <p class=catalog__discription>Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+          </div>
+          <div class="catalog__wrapper catalog-card">
+            <ul class=catalog-card__list>
+              <li class=catalog-card__item>
+                <picture>
+                  <source media="(min-width: 1200px)"srcset="img/catalog-main/photo-sunout-catalog-desktop@1x.jpg, img/catalog-main/photo-sunout-catalog-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"srcset="img/catalog-main/photo-sunout-catalog-tablet@1x.jpg, img/catalog-main/photo-sunout-catalog-tablet@2x.jpg 2x">
+                  <img class=catalog-card__image src=img/catalog-main/photo-catalog-sunout-mobile.jpg srcset="img/catalog-main/photo-catalog-sunout-mobile@2x.jpg 2x"width=280 height=280 alt="дорога и горный пейзаж на закате.">
+                </picture>
+                <div class=catalog-card__footer-wrapper>
+                  <div class=catalog-card__text-wrapper>
+                    <h3 class=catalog-card__title>Неродные просторы</h3>
+                    <p class=catalog-card__discription>Автор фото: Борис</p>
+                  </div>
+                  <div class="catalog-card__wrapper--like catalog-card__wrapper">
+                    <a class=catalog-card__link>
+                      <svg class=catalog-card__icon-like aria-label="Палец вверх."width=23 height=21>
+                        <use xlink:href=#icon-like></use>
+                      </svg>
+                    </a>
+                    <div class=catalog-card__summa-like>1350</div>
+                  </div>
+                </div>
+              </li>
+              <li class=catalog-card__item>
+                <picture>
+                  <source media="(min-width: 1200px)"srcset="img/catalog-main/photo-catalog-green-oasis-desctop@1x.jpg, img/catalog-main/photo-catalog-green-oasis-desctop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"srcset="img/catalog-main/photo-catalog-green-oasis-tablet@1x.jpg, img/catalog-main/photo-catalog-green-oasis-tablet@2x.jpg 2x">
+                  <img class=catalog-card__image src=img/catalog-main/photo-catalog-green-oasis-mobile.jpg srcset="img/catalog-main/photo-catalog-green-oasis-mobile@2x.jpg 2x"width=280 height=280 alt="цветущий кактус на фоне горного хребта.">
+                </picture>
+                <div class=catalog-card__footer-wrapper>
+                  <div class=catalog-card__text-wrapper>
+                    <h3 class=catalog-card__title>Местная растительность</h3>
+                    <p class=catalog-card__discription>Автор фото: Сергей</p>
+                  </div>
+                  <div class="catalog-card__wrapper--like catalog-card__wrapper">
+                    <a class=catalog-card__link>
+                      <svg class=catalog-card__icon-like aria-label="Палец вверх."width=23 height=21>
+                        <use xlink:href=#icon-like></use>
+                      </svg>
+                    </a>
+                    <div class=catalog-card__summa-like>143</div>
+                  </div>
+                </div>
+              </li>
+              <li class=catalog-card__item>
+                <picture>
+                  <source media="(min-width: 1200px)"srcset="img/catalog-main/photo-catalog-forest-desktop@1x.jpg, img/catalog-main/photo-catalog-forest-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"srcset="img/catalog-main/photo-catalog-forest-tablet@1x.jpg, img/catalog-main/photo-catalog-forest-tablet@2x.jpg 2x">
+                  <img class=catalog-card__image src=img/catalog-main/photo-catalog-forest-mobile.jpg srcset="img/catalog-main/photo-catalog-forest-mobile@2x.jpg 2x"width=280 height=280 alt="дорога,вокруг лес.">
+                </picture>
+                <div class="catalog-card__footer-wrapper--recolor catalog-card__footer-wrapper">
+                  <div class=catalog-card__text-wrapper>
+                    <h3 class=catalog-card__title>Дорога на север</h3>
+                    <p class=catalog-card__discription>Автор фото: Петр</p>
+                  </div>
+                  <div class="catalog-card__wrapper--like catalog-card__wrapper">
+                    <a class=catalog-card__link>
+                      <svg class=catalog-card__icon-like aria-label="Палец вверх."width=23 height=21>
+                        <use xlink:href=#icon-like></use>
+                      </svg>
+                    </a>
+                    <div class=catalog-card__summa-like>96</div>
+                  </div>
+                </div>
+              </li>
+              <li class=catalog-card__item>
+                <picture>
+                  <source media="(min-width: 1200px)"srcset="img/catalog-main/photo-catalog-bridge-desktop@1x.jpg, img/catalog-main/photo-catalog-bridge-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"srcset="img/catalog-main/photo-catalog-bridge-tablet@1x.jpg, img/catalog-main/photo-catalog-bridge-tablet@2x.jpg 2x">
+                  <img class=catalog-card__image src=img/catalog-main/photo-catalog-bridge-mobile.jpg srcset="img/catalog-main/photo-catalog-bridge-mobile@2x.jpg 2x"width=280 height=280 alt="горный хребет,деревья,обрыв">
+                </picture>
+                <div class=catalog-card__footer-wrapper>
+                  <div class=catalog-card__text-wrapper>
+                    <h3 class=catalog-card__title>Мост дьявола</h3>
+                    <p class=catalog-card__discription>Автор фото: Антон</p>
+                  </div>
+                  <div class="catalog-card__wrapper--like catalog-card__wrapper">
+                    <a class=catalog-card__link>
+                      <svg class=catalog-card__icon-like aria-label="Палец вверх."width=23 height=21>
+                        <use xlink:href=#icon-like></use>
+                      </svg>
+                    </a>
+                    <div class=catalog-card__summa-like>254</div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class=catalog-video>
+          <h2 class=visually-hidden>Видео о городке Седона.</h2>
+          <div class=catalog-video__wrapper>
+            <h3 class=catalog-video__title>все еще сомневаетесь?</h3>
+            <p class=catalog-video__discription>Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+          </div>
+          <div class=catalog-video__image-wrapper>
+            <picture>
+              <source type=image/webp media="(min-width: 1200px)"srcset="img/catalog-main/video-desktop@1x.webp, img/catalog-main/video-desktop@2x.webp 2x">
+              <source type=image/webp media="(min-width: 768px)"srcset="img/catalog-main/video-tablet@1x.webp, img/catalog-main/video-tablet@2x.webp 2x">
+              <source type=image/webp srcset="img/catalog-main/video-mobile.webp, img/catalog-main/video-mobile@2x.webp 2x">
+              <source media="(min-width: 1200px)"srcset="img/catalog-main/video-desktop@1x.jpg, img/catalog-main/video-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"srcset="img/catalog-main/video-tablet@1x.jpg, img/catalog-main/video-tablet@2x.jpg 2x">
+              <img class=catalog-video__image src=img/catalog-main/video-mobile.jpg srcset="img/catalog-main/video-mobile@2x.jpg 2x"width=280 height=177 alt=Дорога,машины,горы.>
+            </picture>
+          </div>
+        </section>
+      </main>
+      <footer class=main-footer>
+        <div class="main-footer__social main-footer__social--catalog social">
+          <p class="social__title--catalog social__title">#visitSEDONA</p>
+          <ul class=social__list>
+            <li class=social__item>
+              <a class="social__link social__link--vkontakte"href=#>
+                <span class=visually-hidden>Мы в вк</span>
+              </a>
+            </li>
+            <li class=social__item>
+              <a class="social__link social__link--telegram"href=#>
+                <span class=visually-hidden>Мы в телеграм</span>
+              </a>
+            </li>
+            <li class=social__item>
+              <a class="social__link social__link--youtube"href=#>
+                <span class=visually-hidden>Мы на ютуб</span>
+              </a>
+            </li>
+          </ul>
+          <div class="main-footer__copyright main-footer__copyright--catalog copyright">
+            <p class=copyright__text>Разработано</p>
+            <a class=copyright__link href=https://htmlacademy.ru/ >
+              <svg aria-label="Сайт разработчика"width=27 height=35>
+                <use xlink:href=#developer-adress></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src=js/script.js></script>
+  </body>
+</html>
