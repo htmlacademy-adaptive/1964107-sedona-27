@@ -47,6 +47,8 @@
   },
   "type": "module",
   "dependencies": {
-    "browser-sync-client": "^2.27.11"
+    "browser-sync-client": "^2.27.11",
+    "gulp-minify": "^3.1.0",
+    "html-minifier": "^4.0.0"
   }
 }
