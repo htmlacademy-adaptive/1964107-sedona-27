@@ -24,10 +24,10 @@
     </svg>
     <div class="page__container">
       <header class="main-header">
-        <a class="main-header__logo">
+        <a class="main-header__logo" href="index.html">
           <img class="main-header__logo-image" src="img/header/main-logo.svg" width="185" height="96" alt="логотип города Седона.">
         </a>
-        <nav class="main-nav main-nav--closed">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню навигации</span>
           </button>
@@ -55,7 +55,7 @@
           </ul>
         </nav>
       </header>
-      <main class="main-container main-container__catalog">
+      <main class="main-container main-container--catalog ">
         <section class="main-hero main-hero--catalog">
           <h2 class="visually-hidden">Блок приветствия.</h2>
           <div class="main-hero__wrapper main-hero__wrapper--catalog">
@@ -70,18 +70,21 @@
           <div class="catalog__wrapper catalog-card">
             <ul class="catalog-card__list">
               <li class="catalog-card__item">
-                <picture>
-                  <source media="(min-width: 1200px)" srcset="img/catalog-main/photo-sunout-catalog-desktop@1x.jpg 1x, img/catalog-main/photo-sunout-catalog-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/catalog-main/photo-sunout-catalog-tablet@1x.jpg 1x, img/catalog-main/photo-sunout-catalog-tablet@2x.jpg 2x">
-                  <img class="catalog-card__image" src="img/catalog-main/photo-catalog-sunout-mobile.jpg" srcset="img/catalog-main/photo-catalog-sunout-mobile@2x.jpg 2x" width="280" height="280" alt="дорога и горный пейзаж на закате.">
-                </picture>
+                <a class="catalog-card__photo-link" href="#">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/catalog-main/photo-sunout-catalog-desktop@1x.jpg 1x, img/catalog-main/photo-sunout-catalog-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/catalog-main/photo-sunout-catalog-tablet@1x.jpg 1x, img/catalog-main/photo-sunout-catalog-tablet@2x.jpg 2x">
+                    <img class="catalog-card__image" src="img/catalog-main/photo-catalog-sunout-mobile.jpg" srcset="img/catalog-main/photo-catalog-sunout-mobile@2x.jpg 2x" width="280" height="280" alt="дорога и горный пейзаж на закате.">
+                  </picture>
+                </a>
                 <div class="catalog-card__footer-wrapper">
                   <div class="catalog-card__text-wrapper">
                     <h3 class="catalog-card__title">Неродные просторы</h3>
                     <p class="catalog-card__discription">Автор фото: Борис</p>
                   </div>
                   <div class="catalog-card__wrapper--like catalog-card__wrapper">
-                    <a class="catalog-card__link">
+                    <a class="catalog-card__link" href="#">
+                      <span class="visually-hidden">Оценить фото.</span>
                       <svg class="catalog-card__icon-like" aria-label="Палец вверх." width="23" height="21">
                         <use xlink:href="#icon-like"></use>
                       </svg>
@@ -91,18 +94,21 @@
                 </div>
               </li>
               <li class="catalog-card__item">
-                <picture>
-                  <source media="(min-width: 1200px)" srcset="img/catalog-main/photo-catalog-green-oasis-desctop@1x.jpg 1x, img/catalog-main/photo-catalog-green-oasis-desctop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/catalog-main/photo-catalog-green-oasis-tablet@1x.jpg 1x, img/catalog-main/photo-catalog-green-oasis-tablet@2x.jpg 2x">
-                  <img class="catalog-card__image" src="img/catalog-main/photo-catalog-green-oasis-mobile.jpg" srcset="img/catalog-main/photo-catalog-green-oasis-mobile@2x.jpg 2x" width="280" height="280" alt="цветущий кактус на фоне горного хребта.">
-                </picture>
+                <a class="catalog-card__photo-link" href="#">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/catalog-main/photo-catalog-green-oasis-desctop@1x.jpg 1x, img/catalog-main/photo-catalog-green-oasis-desctop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/catalog-main/photo-catalog-green-oasis-tablet@1x.jpg 1x, img/catalog-main/photo-catalog-green-oasis-tablet@2x.jpg 2x">
+                    <img class="catalog-card__image" src="img/catalog-main/photo-catalog-green-oasis-mobile.jpg" srcset="img/catalog-main/photo-catalog-green-oasis-mobile@2x.jpg 2x" width="280" height="280" alt="цветущий кактус на фоне горного хребта.">
+                  </picture>
+                </a>
                 <div class="catalog-card__footer-wrapper">
                   <div class="catalog-card__text-wrapper">
                     <h3 class="catalog-card__title">Местная растительность</h3>
                     <p class="catalog-card__discription">Автор фото: Сергей</p>
                   </div>
                   <div class="catalog-card__wrapper--like catalog-card__wrapper">
-                    <a class="catalog-card__link">
+                    <a class="catalog-card__link" href="#">
+                      <span class="visually-hidden">Оценить фото.</span>
                       <svg class="catalog-card__icon-like" aria-label="Палец вверх." width="23" height="21">
                         <use xlink:href="#icon-like"></use>
                       </svg>
@@ -112,18 +118,21 @@
                 </div>
               </li>
               <li class="catalog-card__item">
-                <picture>
-                  <source media="(min-width: 1200px)" srcset="img/catalog-main/photo-catalog-forest-desktop@1x.jpg 1x, img/catalog-main/photo-catalog-forest-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/catalog-main/photo-catalog-forest-tablet@1x.jpg 1x, img/catalog-main/photo-catalog-forest-tablet@2x.jpg 2x">
-                  <img class="catalog-card__image" src="img/catalog-main/photo-catalog-forest-mobile.jpg" srcset=" img/catalog-main/photo-catalog-forest-mobile@2x.jpg 2x" width="280" height="280" alt="дорога,вокруг лес.">
-                </picture>
+                <a class="catalog-card__photo-link" href="#">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/catalog-main/photo-catalog-forest-desktop@1x.jpg 1x, img/catalog-main/photo-catalog-forest-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/catalog-main/photo-catalog-forest-tablet@1x.jpg 1x, img/catalog-main/photo-catalog-forest-tablet@2x.jpg 2x">
+                    <img class="catalog-card__image" src="img/catalog-main/photo-catalog-forest-mobile.jpg" srcset=" img/catalog-main/photo-catalog-forest-mobile@2x.jpg 2x" width="280" height="280" alt="дорога,вокруг лес.">
+                  </picture>
+                </a>
                 <div class="catalog-card__footer-wrapper--recolor catalog-card__footer-wrapper">
                   <div class="catalog-card__text-wrapper">
                     <h3 class="catalog-card__title">Дорога на север</h3>
                     <p class="catalog-card__discription">Автор фото: Петр</p>
                   </div>
                   <div class="catalog-card__wrapper--like catalog-card__wrapper">
-                    <a class="catalog-card__link">
+                    <a class="catalog-card__link" href="#">
+                      <span class="visually-hidden">Оценить фото.</span>
                       <svg class="catalog-card__icon-like" aria-label="Палец вверх." width="23" height="21">
                         <use xlink:href="#icon-like"></use>
                       </svg>
@@ -133,18 +142,21 @@
                 </div>
               </li>
               <li class="catalog-card__item">
-                <picture>
-                  <source media="(min-width: 1200px)" srcset="img/catalog-main/photo-catalog-bridge-desktop@1x.jpg 1x, img/catalog-main/photo-catalog-bridge-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/catalog-main/photo-catalog-bridge-tablet@1x.jpg 1x, img/catalog-main/photo-catalog-bridge-tablet@2x.jpg 2x">
-                  <img class="catalog-card__image" src="img/catalog-main/photo-catalog-bridge-mobile.jpg" srcset="img/catalog-main/photo-catalog-bridge-mobile@2x.jpg 2x" width="280" height="280" alt="горный хребет,деревья,обрыв">
-                </picture>
+                <a class="catalog-card__photo-link" href="#">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/catalog-main/photo-catalog-bridge-desktop@1x.jpg 1x, img/catalog-main/photo-catalog-bridge-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/catalog-main/photo-catalog-bridge-tablet@1x.jpg 1x, img/catalog-main/photo-catalog-bridge-tablet@2x.jpg 2x">
+                    <img class="catalog-card__image" src="img/catalog-main/photo-catalog-bridge-mobile.jpg" srcset="img/catalog-main/photo-catalog-bridge-mobile@2x.jpg 2x" width="280" height="280" alt="горный хребет,деревья,обрыв">
+                  </picture>
+                </a>
                 <div class="catalog-card__footer-wrapper">
                   <div class="catalog-card__text-wrapper">
                     <h3 class="catalog-card__title">Мост дьявола</h3>
                     <p class="catalog-card__discription">Автор фото: Антон</p>
                   </div>
                   <div class="catalog-card__wrapper--like catalog-card__wrapper">
-                    <a class="catalog-card__link">
+                    <a class="catalog-card__link" href="#">
+                      <span class="visually-hidden">Оценить фото.</span>
                       <svg class="catalog-card__icon-like" aria-label="Палец вверх." width="23" height="21">
                         <use xlink:href="#icon-like"></use>
                       </svg>
@@ -163,14 +175,19 @@
             <p class="catalog-video__discription">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
           </div>
           <div class="catalog-video__image-wrapper">
-            <picture>
-              <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog-main/video-desktop@1x.webp 1x, img/catalog-main/video-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog-main/video-tablet@1x.webp 1x, img/catalog-main/video-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/catalog-main/video-mobile.webp 1x, img/catalog-main/video-mobile@2x.webp 2x">
-              <source media="(min-width: 1200px)" srcset="img/catalog-main/video-desktop@1x.jpg 1x, img/catalog-main/video-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/catalog-main/video-tablet@1x.jpg 1x, img/catalog-main/video-tablet@2x.jpg 2x">
-              <img class="catalog-video__image" src="img/catalog-main/video-mobile.jpg" srcset="img/catalog-main/video-mobile@2x.jpg 2x" width="280" height="177" alt="Дорога,машины,горы.">
-            </picture>
+            <a class="catalog-video__image-link" href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog-main/video-desktop@1x.webp 1x, img/catalog-main/video-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog-main/video-tablet@1x.webp 1x, img/catalog-main/video-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/catalog-main/video-mobile.webp 1x, img/catalog-main/video-mobile@2x.webp 2x">
+                <source media="(min-width: 1200px)" srcset="img/catalog-main/video-desktop@1x.jpg 1x, img/catalog-main/video-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/catalog-main/video-tablet@1x.jpg 1x, img/catalog-main/video-tablet@2x.jpg 2x">
+                <img class="catalog-video__image" src="img/catalog-main/video-mobile.jpg" srcset="img/catalog-main/video-mobile@2x.jpg 2x" width="280" height="177" alt="Дорога,машины,горы.">
+              </picture>
+            </a>
+            <button class="catalog-video__button" type="button">
+              <span class="visually-hidden">Запуск видеопрезентации.</span>
+            </button>
           </div>
         </section>
       </main>
@@ -196,7 +213,7 @@
           </ul>
           <div class="main-footer__copyright main-footer__copyright--catalog copyright">
             <p class="copyright__text">Разработано</p>
-            <a class="copyright__link" href="https://htmlacademy.ru/">
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
               <svg aria-label="Сайт разработчика" width="27" height="35">
                 <use xlink:href="#developer-adress"></use>
               </svg>
