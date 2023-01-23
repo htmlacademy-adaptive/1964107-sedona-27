@@ -23,10 +23,10 @@
     </svg>
     <div class="page__container">
       <header class="main-header">
-        <a class="main-header__logo">
+        <a class="main-header__logo" href="index.html">
           <img class="main-header__logo-image" src="img/header/main-logo.svg" width="185" height="96" alt="логотип города Седона.">
         </a>
-        <nav class="main-nav main-nav--closed">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню навигации</span>
           </button>
@@ -209,7 +209,7 @@
           </ul>
           <div class="main-footer__copyright main-footer__copyright--catalog copyright">
             <p class="copyright__text">Разработано</p>
-            <a class="copyright__link" href="https://htmlacademy.ru/">
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
               <svg aria-label="Сайт разработчика" width="27" height="35">
                 <use xlink:href="#developer-adress"></use>
               </svg>
@@ -218,18 +218,7 @@
         </div>
       </footer>
     </div>
-    <div class="popup-form__container">
-      <div class="popup-form__fail">
-        <div class="popup-form__wrapper--fail popup-form__wrapper">
-          <div class="popup-form__header-wrapper--fail popup-form__header-wrapper">
-            <p class="popup-form__title--fail popup-form__title">Что-то пошло не так!</p>
-            <p class="popup-form__discription--fail popup-form__discription">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-          </div>
-          <div class="popup-form__wrapper-button--fail popup-form__wrapper-button">
-            <button class="popup-form__button--fail popup-form__button button" type="button">Ок</button>
-          </div>
-        </div>
-      </div>
+    <div class="modal popup-form">
       <div class="popup-form">
         <div class="popup-form__wrapper">
           <div class="popup-form__header-wrapper">
@@ -238,6 +227,17 @@
           </div>
           <div class="popup-form__wrapper-button">
             <button class="popup-form__button button" type="button">Закрыть окно</button>
+          </div>
+        </div>
+      </div>
+      <div class="popup-form popup-form--fail">
+        <div class="popup-form__wrapper--fail popup-form__wrapper">
+          <div class="popup-form__header-wrapper--fail popup-form__header-wrapper">
+            <p class="popup-form__title--fail popup-form__title">Что-то пошло не так!</p>
+            <p class="popup-form__discription--fail popup-form__discription">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+          </div>
+          <div class="popup-form__wrapper-button--fail popup-form__wrapper-button">
+            <button class="popup-form__button--fail popup-form__button button" type="button">Ок</button>
           </div>
         </div>
       </div>
